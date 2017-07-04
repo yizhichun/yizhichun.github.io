@@ -293,7 +293,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/03/my-first-hexo-blog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/04/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yizhichun">
@@ -312,7 +312,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/03/my-first-hexo-blog/" itemprop="url">深度学习中的梯度下降算法</a></h1>
+                <a class="post-title-link" href="/2017/07/04/test/" itemprop="url">test</a></h1>
         
 
         <div class="post-meta">
@@ -324,8 +324,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-03T23:52:55+08:00">
-                2017-07-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-04T23:50:38+08:00">
+                2017-07-04
               </time>
             
 
@@ -335,28 +335,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/深度学习/" itemprop="url" rel="index">
-                    <span itemprop="name">深度学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -364,7 +342,7 @@
 
           
           
-             <span id="/2017/07/03/my-first-hexo-blog/" class="leancloud_visitors" data-flag-title="深度学习中的梯度下降算法">
+             <span id="/2017/07/04/test/" class="leancloud_visitors" data-flag-title="test">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,24 +372,7 @@
       
         
           
-            <h2 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h2><ul>
-<li>可导函数在任一点的梯度是<strong><code>自变量空间中的一个向量</code></strong>（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量）</li>
-<li>函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。</li>
-<li>某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。</li>
-<li>梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数（变化率）。</li>
-<li>梯度可以是 0 向量。在梯度为 0 向量的点上各方向的变化率都为 0 。这是函数达到极大／极小值的一阶必要非充分条件（例如鞍点不是极大／极小值，但是梯度也为 0 ）。</li>
-</ul>
-<h2 id="caffe-中gradient-checker"><a href="#caffe-中gradient-checker" class="headerlink" title="caffe 中gradient checker"></a>caffe 中gradient checker</h2><ul>
-<li>采用的差分法</li>
-</ul>
-<p><code>//Compute derivative of top w.r.t. each bottom and parameter input using finite differencing.</code></p>
-<ul>
-<li>源码：</li>
-</ul>
-<p><code>estimated_gradient = (positive_objective - negative_objective) /
-stepsize_ / 2.;</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        System.out.printly(<span class="string">"Hello World!"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    print(<span class="string">"hello world!"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+            
           
         
       
@@ -628,25 +589,7 @@ stepsize_ / 2.;</code></p>
           
 
           
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">categories</span>
-              </a>
-            </div>
-          
 
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
           
 
         </nav>
