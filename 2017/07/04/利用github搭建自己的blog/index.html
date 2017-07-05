@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/04/利用github搭建自己的blog/index.html">
 <meta property="og:site_name" content="青青子衿">
 <meta property="og:description" content="创建仓库仓库名必须是username.github.io 本地git配置ssh此操作已经完成，掠过。">
-<meta property="og:updated_time" content="2017-07-05T00:30:48.000Z">
+<meta property="og:updated_time" content="2017-07-05T00:32:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用github搭建自己的blog">
 <meta name="twitter:description" content="创建仓库仓库名必须是username.github.io 本地git配置ssh此操作已经完成，掠过。">
@@ -408,7 +408,8 @@
 <h2 id="本地git配置ssh"><a href="#本地git配置ssh" class="headerlink" title="本地git配置ssh"></a>本地git配置ssh</h2><p>此操作已经完成，掠过。</p>
 <a id="more"></a>
 <h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ brew install node</div><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
-<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ cd **/username.github.io/</div><div class="line">$ hexo init</div><div class="line">``` </div><div class="line"></div><div class="line">#### 配置_config.yml</div><div class="line">``` xml</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:username/username.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd **/username.github.io/</div><div class="line">$ hexo init</div></pre></td></tr></table></figure>
+<h4 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:username/username.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p><code>npm install hexo-deployer-git --save</code></p>
 <p>不装的话会报错</p>
 <p><code>Deployer not found: github 或者 Deployer not found: git</code></p>
@@ -468,10 +469,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/04/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -547,7 +544,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -604,7 +601,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建仓库"><span class="nav-number">1.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地git配置ssh"><span class="nav-number">2.</span> <span class="nav-text">本地git配置ssh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">3.</span> <span class="nav-text">hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">3.0.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">3.0.2.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装插件"><span class="nav-number">3.0.3.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用"><span class="nav-number">3.0.4.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建仓库"><span class="nav-number">1.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地git配置ssh"><span class="nav-number">2.</span> <span class="nav-text">本地git配置ssh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">3.</span> <span class="nav-text">hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">3.0.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">3.0.2.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-config-yml"><span class="nav-number">3.0.3.</span> <span class="nav-text">配置_config.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装插件"><span class="nav-number">3.0.4.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用"><span class="nav-number">3.0.5.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
