@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="梯度下降 可导函数在任一点的梯度是自变量空间中的一个向量（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量） 函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。 某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。 梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数">
+<meta name="description" content="梯度下降 可导函数在任一点的梯度是自变量空间中的一个向量（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量） 函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。 某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。 梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数（">
 <meta name="keywords" content="Machine Learning,Deep Learning,Caffe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深度学习中的梯度下降算法">
 <meta property="og:url" content="http://yoursite.com/2017/07/03/深度学习中的梯度下降算法/index.html">
 <meta property="og:site_name" content="青青子衿">
-<meta property="og:description" content="梯度下降 可导函数在任一点的梯度是自变量空间中的一个向量（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量） 函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。 某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。 梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数">
-<meta property="og:updated_time" content="2017-07-05T00:43:58.000Z">
+<meta property="og:description" content="梯度下降 可导函数在任一点的梯度是自变量空间中的一个向量（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量） 函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。 某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。 梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数（">
+<meta property="og:updated_time" content="2017-07-05T09:58:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深度学习中的梯度下降算法">
-<meta name="twitter:description" content="梯度下降 可导函数在任一点的梯度是自变量空间中的一个向量（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量） 函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。 某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。 梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数">
+<meta name="twitter:description" content="梯度下降 可导函数在任一点的梯度是自变量空间中的一个向量（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量） 函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。 某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。 梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数（">
 
 
 
@@ -404,14 +404,14 @@
       
 
       
-        <a id="more"></a>
-<h2 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h2><ul>
+        <h2 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h2><ul>
 <li>可导函数在任一点的梯度是<strong><code>自变量空间中的一个向量</code></strong>（二元函数的梯度是 xy 平面上的向量，而不是 xyz 空间里的向量）</li>
 <li>函数图形在这一点的切平面的法向量投影在自变量空间中，就是该点梯度的反方向。</li>
 <li>某点的梯度是函数以及它的切平面在该点上升最快的方向，即方向导数最大的方向。梯度的长度（模）就是在该方向的方向导数（变化率）。</li>
 <li>梯度向任何自变量空间方向的投影的长度（模）是函数在该方向上的方向导数（变化率）。</li>
 <li>梯度可以是 0 向量。在梯度为 0 向量的点上各方向的变化率都为 0 。这是函数达到极大／极小值的一阶必要非充分条件（例如鞍点不是极大／极小值，但是梯度也为 0 ）。</li>
 </ul>
+<a id="more"></a>
 <h2 id="caffe-中gradient-checker"><a href="#caffe-中gradient-checker" class="headerlink" title="caffe 中gradient checker"></a>caffe 中gradient checker</h2><ul>
 <li>采用的差分法</li>
 </ul>
@@ -478,8 +478,8 @@ stepsize_ / 2.;</code></p>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/04/利用github搭建自己的blog/" rel="prev" title="利用hexo+github搭建自己的blog">
-                利用hexo+github搭建自己的blog <i class="fa fa-chevron-right"></i>
+              <a href="/2017/07/03/markdown_example/" rel="prev" title="欢迎使用 Cmd Markdown 编辑阅读器">
+                欢迎使用 Cmd Markdown 编辑阅读器 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -567,7 +567,7 @@ stepsize_ / 2.;</code></p>
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -578,7 +578,7 @@ stepsize_ / 2.;</code></p>
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

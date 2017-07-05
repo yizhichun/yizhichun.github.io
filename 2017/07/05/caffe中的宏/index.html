@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="INSTANTIATE_CLASS定义的位置./include/caffe/common.hpp:41:#define INSTANTIATE_CLASS(classname) 功能实例化classname模板类，float和double12345// Instantiate a class with float and double specifications.#define INSTANTI">
+<meta name="description" content="INSTANTIATE_CLASS">
 <meta name="keywords" content="caffe,机器学习,深度学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="caffe中的宏">
 <meta property="og:url" content="http://yoursite.com/2017/07/05/caffe中的宏/index.html">
 <meta property="og:site_name" content="青青子衿">
-<meta property="og:description" content="INSTANTIATE_CLASS定义的位置./include/caffe/common.hpp:41:#define INSTANTIATE_CLASS(classname) 功能实例化classname模板类，float和double12345// Instantiate a class with float and double specifications.#define INSTANTI">
-<meta property="og:updated_time" content="2017-07-05T08:51:11.000Z">
+<meta property="og:description" content="INSTANTIATE_CLASS">
+<meta property="og:updated_time" content="2017-07-05T09:58:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="caffe中的宏">
-<meta name="twitter:description" content="INSTANTIATE_CLASS定义的位置./include/caffe/common.hpp:41:#define INSTANTIATE_CLASS(classname) 功能实例化classname模板类，float和double12345// Instantiate a class with float and double specifications.#define INSTANTI">
+<meta name="twitter:description" content="INSTANTIATE_CLASS">
 
 
 
@@ -348,8 +348,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/各种代码/" itemprop="url" rel="index">
-                    <span itemprop="name">各种代码</span>
+                  <a href="/categories/代码平台/" itemprop="url" rel="index">
+                    <span itemprop="name">代码平台</span>
                   </a>
                 </span>
 
@@ -359,7 +359,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/各种代码/Caffe/" itemprop="url" rel="index">
+                  <a href="/categories/代码平台/Caffe/" itemprop="url" rel="index">
                     <span itemprop="name">Caffe</span>
                   </a>
                 </span>
@@ -370,7 +370,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/各种代码/Caffe/Caffe源码阅读/" itemprop="url" rel="index">
+                  <a href="/categories/代码平台/Caffe/Caffe源码阅读/" itemprop="url" rel="index">
                     <span itemprop="name">Caffe源码阅读</span>
                   </a>
                 </span>
@@ -415,8 +415,9 @@
       
 
       
-        <h2 id="INSTANTIATE-CLASS"><a href="#INSTANTIATE-CLASS" class="headerlink" title="INSTANTIATE_CLASS"></a>INSTANTIATE_CLASS</h2><h5 id="定义的位置"><a href="#定义的位置" class="headerlink" title="定义的位置"></a>定义的位置</h5><p><code>./include/caffe/common.hpp:41:#define INSTANTIATE_CLASS(classname)</code></p>
-<h5 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h5><p>实例化classname模板类，float和double<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Instantiate a class with float and double specifications.</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> INSTANTIATE_CLASS(classname) \</span></div><div class="line">  char gInstantiationGuard##classname; \</div><div class="line">  template class classname<span class="meta-string">&lt;float&gt;; \</span></div><div class="line">  <span class="keyword">template</span> <span class="class"><span class="keyword">class</span> <span class="title">classname</span>&lt;double&gt;</span></div></pre></td></tr></table></figure></p>
+        <h2 id="INSTANTIATE-CLASS"><a href="#INSTANTIATE-CLASS" class="headerlink" title="INSTANTIATE_CLASS"></a>INSTANTIATE_CLASS</h2><a id="more"></a>
+<h5 id="定义的位置"><a href="#定义的位置" class="headerlink" title="定义的位置"></a>定义的位置</h5><p><code>./include/caffe/common.hpp:41:#define INSTANTIATE_CLASS(classname)</code></p>
+<h5 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h5><p>实例化classname模板类，float和double<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Instantiate a class with float and double specifications.</span></div><div class="line"><span class="meta"># <span class="meta-keyword">define</span> INSTANTIATE_CLASS(classname) \</span></div><div class="line">  char gInstantiationGuard##classname; \</div><div class="line">  template class classname<span class="meta-string">&lt;float&gt;; \</span></div><div class="line">  <span class="keyword">template</span> <span class="class"><span class="keyword">class</span> <span class="title">classname</span>&lt;double&gt;</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -463,8 +464,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/05/markdown_example/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2017/07/04/利用github搭建自己的blog/" rel="next" title="利用hexo+github搭建自己的blog">
+                <i class="fa fa-chevron-left"></i> 利用hexo+github搭建自己的blog
               </a>
             
           </div>
@@ -473,7 +474,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/05/C-中的virtual/" rel="prev" title="C++中的virtual">
+              <a href="/2017/07/05/Cpp中的virtual/" rel="prev" title="C++中的virtual">
                 C++中的virtual <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -562,7 +563,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -573,7 +574,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
